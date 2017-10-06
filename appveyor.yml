@@ -56,7 +56,7 @@ environment:
       PLATFORM: Win32
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC10
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2010 Win32 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 10 2010
@@ -64,14 +64,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC10
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2010 x64
     - GENERATOR: Visual Studio 10 2010 Win64
       PLATFORM: x64
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC10
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2010 x64 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 10 2010 Win64
@@ -79,14 +79,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC10
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2012 Win32
     - GENERATOR: Visual Studio 11 2012
       PLATFORM: Win32
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC11
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2012 Win32 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 11 2012
@@ -94,14 +94,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC11
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2012 x64
     - GENERATOR: Visual Studio 11 2012 Win64
       PLATFORM: x64
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC11
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2012 x64 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 11 2012 Win64
@@ -109,14 +109,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC11
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2013 Win32
     - GENERATOR: Visual Studio 12 2013
       PLATFORM: Win32
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC12
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2013 Win32 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 12 2013
@@ -124,14 +124,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC12
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2013 x64
     - GENERATOR: Visual Studio 12 2013 Win64
       PLATFORM: x64
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC12
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2013 x64 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 12 2013 Win64
@@ -139,14 +139,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC12
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2015 Win32
     - GENERATOR: Visual Studio 14 2015
       PLATFORM: Win32
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       VC_VER: VC14
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2015 Win32 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 14 2015
@@ -154,14 +154,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       VC_VER: VC14
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2015 x64
     - GENERATOR: Visual Studio 14 2015 Win64
       PLATFORM: x64
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       VC_VER: VC14
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2015 x64 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 14 2015 Win64
@@ -169,14 +169,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       VC_VER: VC14
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2017 Win32
     - GENERATOR: Visual Studio 15 2017
       PLATFORM: Win32
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       VC_VER: VC15
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2017 Win32 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 15 2017
@@ -184,14 +184,14 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       VC_VER: VC15
-      FLAGS: -w
+      FLAGS: release-w
 
     # Visual Studio 2017 x64
     - GENERATOR: Visual Studio 15 2017 Win64
       PLATFORM: x64
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       VC_VER: VC15
-      FLAGS: 
+      FLAGS: release
 
     # Visual Studio 2017 x64 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 15 2017 Win64
@@ -199,7 +199,7 @@ environment:
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       VC_VER: VC15
-      FLAGS: -w
+      FLAGS: release-w
 
 before_build:
   - echo Running cmake...
@@ -210,10 +210,12 @@ build:
   parallel: true                  # enable MSBuild parallel builds
   project: expat.sln              # path to Visual Studio solution or project
 
-test_script:
+after_build:
   - dir Release
+  - copy c:\projects\libexpat\expat.sln C:\projects\libexpat\Release /y
+  - copy c:\projects\libexpat\*.vcxproj* C:\projects\libexpat\Release /y
 
 artifacts:
   - path: Release
-    name: expat-%VC_VER%-%PLATFORM%%FLAGS%
+    name: expat-%VC_VER%-%PLATFORM%-%FLAGS%
     type: zip
