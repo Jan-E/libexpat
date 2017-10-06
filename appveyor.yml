@@ -172,3 +172,8 @@ build:
 
 test_script:
   - dir Release
+
+artifacts:
+  - path: Release
+    name: master
+    type: zip
