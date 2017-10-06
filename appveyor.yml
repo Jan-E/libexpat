@@ -52,6 +52,21 @@ configuration: Release
 environment:
   matrix:
     # Visual Studio 2010 Win32
+    - GENERATOR: Visual Studio 9 2008
+      PLATFORM: Win32
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
+      VC_VER: VC9
+      FLAGS: release
+
+    # Visual Studio 2010 Win32 XML_UNICODE_WCHAR_T
+    - GENERATOR: Visual Studio 9 2008
+      PLATFORM: Win32
+      CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
+      APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
+      VC_VER: VC9
+      FLAGS: release-utf16
+
+    # Visual Studio 2010 Win32
     - GENERATOR: Visual Studio 10 2010
       PLATFORM: Win32
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
