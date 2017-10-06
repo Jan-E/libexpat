@@ -228,7 +228,7 @@ build_script:
 after_build:
   - dir Release
   - copy c:\projects\libexpat\expat.sln C:\projects\libexpat\Release /y
-  - copy c:\projects\libexpat\*.vcxproj* C:\projects\libexpat\Release /y
+  - copy c:\projects\libexpat\*.vc* C:\projects\libexpat\Release /y
 
 artifacts:
   - path: Release
