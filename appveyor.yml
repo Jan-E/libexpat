@@ -172,4 +172,3 @@ build:
 
 test_script:
   - dir Release
-  - cp Release\expat.dll tests\Release
