@@ -196,7 +196,7 @@ environment:
     # Visual Studio 2017 x64 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 15 2017 Win64
       PLATFORM: x64
-      CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
+      CFLAGS: /MT -DXML_UNICODE -DXML_UNICODE_WCHAR_T
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       VC_VER: VC15
       FLAGS: release-w
@@ -205,6 +205,7 @@ before_build:
   - echo Running cmake...
   - cd c:\projects\libexpat
   - cmake -G"%GENERATOR%" expat
+  - perl -pi.bak -e "s/MultiThreadedDLL/MultiThreaded/gi" expat.vcxproj
 
 build:
   parallel: true                  # enable MSBuild parallel builds
