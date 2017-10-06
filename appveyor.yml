@@ -42,7 +42,7 @@ clone_depth: 1
 # clone directory
 clone_folder: c:\projects\libexpat
 
-configuration: Debug
+configuration: Release
 
 # AppVeyor pre-installed software:
 # https://www.appveyor.com/docs/build-environment/#pre-installed-software
@@ -171,5 +171,5 @@ build:
   project: expat.sln              # path to Visual Studio solution or project
 
 test_script:
-  - cp Debug\expatd.dll tests\Debug
-  - tests\Debug\runtests.exe
+  - cp Release\expat.dll tests\Release
+  - tests\Release\runtests.exe
