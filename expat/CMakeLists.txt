@@ -28,7 +28,7 @@ endif()
 
 option(BUILD_tools "build the xmlwf tool for expat library" ${BUILD_tools_default})
 option(BUILD_examples "build the examples for expat library" ON)
-option(BUILD_tests "build the tests for expat library" OFF)
+option(BUILD_tests "build the tests for expat library" ON)
 option(BUILD_shared "build a shared expat library" ON)
 option(BUILD_doc "build man page for xmlwf" ${BUILD_doc_default})
 option(USE_libbsd "utilize libbsd (for arc4random_buf)" OFF)
