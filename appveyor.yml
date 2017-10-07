@@ -51,14 +51,14 @@ configuration: Release
 # https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html#visual-studio-generators
 environment:
   matrix:
-    # Visual Studio 2010 Win32
+    # Visual Studio 2008 Win32
     - GENERATOR: Visual Studio 9 2008
       PLATFORM: Win32
       APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
       VC_VER: VC9
       FLAGS: release
 
-    # Visual Studio 2010 Win32 XML_UNICODE_WCHAR_T
+    # Visual Studio 2008 Win32 XML_UNICODE_WCHAR_T
     - GENERATOR: Visual Studio 9 2008
       PLATFORM: Win32
       CFLAGS: -DXML_UNICODE -DXML_UNICODE_WCHAR_T
