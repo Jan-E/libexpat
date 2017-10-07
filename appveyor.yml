@@ -220,8 +220,6 @@ before_build:
   - echo Running cmake...
   - cd c:\projects\libexpat
   - cmake -G"%GENERATOR%" -DBUILD_tests=OFF -DBUILD_shared=OFF expat
-  - if exist expat.vcxproj perl -pi.bak -e "s/MultiThreadedDLL/MultiThreaded/gi" expat.vcxproj
-  - if exist expat.vcproj  perl -pi.bak -e "s/MultiThreadedDLL/MultiThreaded/gi" expat.vcproj
 
 build_script:
   - call msbuild expat.sln /m /t:expat /p:Configuration=Release /p:Platform=%PLATFORM%
